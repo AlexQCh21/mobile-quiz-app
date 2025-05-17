@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.s04quezada.PreguntasFragment" />
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cvTitle"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:layout_margin="15dp"-->
+<!--        app:cardCornerRadius="16dp"-->
+<!--        android:backgroundTint="@color/black"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textAlignment="center"-->
+<!--            android:padding="15dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:text="Quiz AM"-->
+<!--            android:textSize="30sp"-->
+<!--            android:textStyle="bold"/>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/cvTitle">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_margin="15dp"-->
+<!--            android:backgroundTint="@color/cardBackgroudn"-->
+<!--            app:cardCornerRadius="16dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/fragmentPreguntas"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:paddingTop="20dp"-->
+<!--                android:orientation="vertical">-->
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/cvPregunta"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    app:cardCornerRadius="16dp"-->
+<!--                    android:backgroundTint="@color/white">-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvPregunta"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:padding="15dp"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:text="¿Cuántos componentes tiene una App?"-->
+<!--                        android:textSize="25sp"-->
+<!--                        android:textStyle="bold"/>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/cvRespuestas"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    app:cardCornerRadius="16dp"-->
+<!--                    android:backgroundTint="@color/white">-->
+
+<!--                    <RadioGroup-->
+<!--                        android:id="@+id/rdOpciones"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:paddingVertical="20dp"-->
+<!--                        android:paddingHorizontal="10dp"-->
+<!--                        >-->
+<!--&lt;!&ndash;                        <RadioButton&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_marginBottom="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:text="2 Componentes"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <RadioButton&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_marginBottom="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:text="3 Componentes"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <RadioButton&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_marginBottom="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:text="4 Componentes"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <RadioButton&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:layout_marginBottom="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:textSize="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                            android:text="5 Componentes"/>&ndash;&gt;-->
+<!--                    </RadioGroup>-->
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn_next"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Siguiente pregunta"-->
+<!--                    android:layout_marginHorizontal="10dp"-->
+<!--                    android:layout_marginBottom="16dp"-->
+<!--                    android:background="@drawable/btn_component" />-->
+<!--            </LinearLayout>-->
+
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+
+<!--    </LinearLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

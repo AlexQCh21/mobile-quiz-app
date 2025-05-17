@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/cardConometro"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/time" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_top"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardConometro">
+
+        <LinearLayout
+            android:id="@+id/fragmentPreguntas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvPregunta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="16dp">
+
+                <TextView
+                    android:id="@+id/tvPregunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="¿Cuántos componentes tiene una App?"
+                    android:textAlignment="center"
+                    android:textColor="@color/preguntaColor"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+            <RadioGroup
+                android:id="@+id/rdOpciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cardBackground"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="20dp">
+
+<!--                <RadioButton-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="15dp"-->
+<!--                    android:text="2 Componentes"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/radiobtnTextcolor"-->
+<!--                    android:layout_marginVertical="10dp"-->
+<!--                    android:background="@drawable/radiobutton_background"-->
+<!--                    android:textSize="17sp" />-->
+
+<!--                <RadioButton-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="15dp"-->
+<!--                    android:text="3 Componentes"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/radiobtnTextcolor"-->
+<!--                    android:layout_marginVertical="10dp"-->
+<!--                    android:background="@drawable/radiobutton_background"-->
+<!--                    android:textSize="17sp" />-->
+
+<!--                <RadioButton-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="15dp"-->
+<!--                    android:text="1 Componentes"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/radiobtnTextcolor"-->
+<!--                    android:layout_marginVertical="10dp"-->
+<!--                    android:background="@drawable/radiobutton_background"-->
+<!--                    android:textSize="17sp" />-->
+
+<!--                <RadioButton-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="15dp"-->
+<!--                    android:text="4 Componentes"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:textColor="@color/radiobtnTextcolor"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_marginVertical="10dp"-->
+<!--                    android:background="@drawable/radiobutton_background"-->
+<!--                    android:textSize="17sp" />-->
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_next_pregunta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/btn_component"
+                android:paddingHorizontal="60dp"
+                android:text="Enviar"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
