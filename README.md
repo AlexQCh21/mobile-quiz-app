@@ -3,7 +3,7 @@ Este aplicativo móvil es un juego interactivo de preguntas diseñado para evalu
 
 ## Vistas
 ###Inicio
-![image](https://github.com/user-attachments/assets/075349cb-8bd2-4038-acd7-a0d2c33d078f)
+<img src="https://github.com/user-attachments/assets/075349cb-8bd2-4038-acd7-a0d2c33d078f" width="300"/>
 
 ### Pregunta
 ![image](https://github.com/user-attachments/assets/6ae82900-e94f-4c1a-b251-a91d7ee0ec57)
