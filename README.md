@@ -1,5 +1,7 @@
 # DevQuiz Mobile
 Este aplicativo móvil es un juego interactivo de preguntas diseñado para evaluar tus conocimientos sobre el desarrollo de aplicaciones Android.
+<br/>
+Programador: Quezada Chorres Cesar Alexander
 
 ## Vistas
 ### Inicio
